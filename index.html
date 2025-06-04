@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Recuadro que enlaza a la página de los mayas -->
+    <div id="recuadro-mayas">
+        <a href="https://manusnigra.my.canva.site/los-mayas" target="_blank">Los Mayas</a>
+    </div>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultura Zapoteca</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    :root {
+      --primario: #283593;
+      --secundario: #c5cae9;
+      --claro: #ffffff;
+      --oscuro: #1a237e;
+      --acento: #ffb300;
+      --bg-glow: radial-gradient(circle at center, #1a237e 0%, #000000 100%);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      font-family: 'Rubik', sans-serif;
+      background: var(--bg-glow);
+      background-size: 400% 400%;
+      animation: backgroundFlow 60s infinite alternate;
+      color: var(--claro);
+      line-height: 1.7;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    @keyframes backgroundFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header {
+      background: linear-gradient(120deg, var(--primario), var(--oscuro));
+      padding: 4rem 1rem;
+      text-align: center;
+      box-shadow: 0 0 30px var(--acento);
+      position: relative;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      animation: flipIn 2s ease-in-out;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      animation: fadeInUp 2s ease-in-out;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: var(--primario);
+      padding: 1rem;
+      gap: 0.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--claro);
+      background-color: #3f51b5;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: var(--acento);
+      color: var(--oscuro);
+      transform: scale(1.1);
+      box-shadow: 0 0 10px var(--acento);
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+    section h2 {
+      color: var(--acento);
+      border-bottom: 3px solid var(--claro);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+    .imagen {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.4s ease;
+    }
+    .imagen:hover {
+      transform: scale(1.05);
+    }
+    @keyframes flipIn {
+      from { transform: rotateX(90deg); opacity: 0; }
+      to { transform: rotateX(0deg); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Música de fondo -->
+  <audio id="audioFondo" autoplay loop>
+    <source src="sonidos/fondo-ambiental.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <h1>Cultura Zapoteca</h1>
+    <p>Exploración profunda de una civilización majestuosa</p>
+  </header>
+
+  <nav>
+    <a href="#medios">Medios</a>
+    <a href="#subsistencia">Subsistencia</a>
+    <a href="#estructura">Sociedad</a>
+    <a href="#economia">Economía</a>
+    <a href="#religion">Religión</a>
+    <a href="#arte">Arte</a>
+    <a href="#figuras">Figuras</a>
+    <a href="#curiosidades">Curiosidades</a>
+  </nav>
+
+  <main>
+    <section id="medios" data-aos="fade-up">
+      <h2>Medios Geográficos</h2>
+      <p>Los zapotecas se establecieron principalmente en el Valle de Oaxaca, una región montañosa del sur de México. Este territorio incluía áreas fértiles y un clima templado que permitió el desarrollo agrícola. El entorno geográfico influyó fuertemente en su arquitectura y distribución urbana, como lo demuestra Monte Albán, ciudad construida sobre una montaña nivelada.</p>
+    </section>
+
+    <section id="subsistencia" data-aos="fade-right">
+      <h2>Subsistencia</h2>
+      <p>La economía de subsistencia zapoteca se basaba en la agricultura, especialmente en el cultivo de maíz, frijol, calabaza y chile. También criaban animales como guajolotes. El aprovechamiento de terrazas agrícolas y sistemas de riego demuestran un alto grado de conocimiento agrícola.</p>
+    </section>
+
+    <section id="estructura" data-aos="fade-left">
+      <h2>Estructura Social y Política</h2>
+      <p>La sociedad zapoteca estaba jerarquizada. En la cima se encontraba la nobleza gobernante, que combinaba poder político y religioso. Les seguían los artesanos, agricultores, comerciantes y finalmente los sirvientes o esclavos. El gobierno era teocrático: los gobernantes eran considerados descendientes de los dioses y ejercían autoridad en nombre de estos.</p>
+    </section>
+
+    <section id="economia" data-aos="zoom-in">
+      <h2>Economía</h2>
+      <p>Además de la agricultura, los zapotecas desarrollaron un activo comercio con otras culturas mesoamericanas como los mixtecos y los mayas. Intercambiaban cerámica, obsidiana, textiles y productos agrícolas. Tenían mercados locales bien organizados y utilizaban el trueque como forma de intercambio.</p>
+    </section>
+
+    <section id="religion" data-aos="fade-up">
+      <h2>Religión</h2>
+      <p>La religión zapoteca era politeísta. Rindieron culto a múltiples deidades relacionadas con fenómenos naturales, la fertilidad y la lluvia. Cocijo, dios del rayo y la lluvia, fue uno de los más importantes. También rendían culto a los antepasados a través de entierros ceremoniales y urnas funerarias.</p>
+    </section>
+
+    <section id="arte" data-aos="fade-up">
+      <h2>Arte y Arquitectura</h2>
+      <p>El arte zapoteca se expresa en cerámica, estelas talladas, urnas funerarias y esculturas. Usaban símbolos religiosos y figuras antropomorfas. En arquitectura, desarrollaron plataformas, patios, escalinatas y sistemas urbanos complejos como los de Monte Albán y Mitla.</p>
+    </section>
+<section id="figuras">
+      <h2>Figuras Zapotecas del Museo (Imágenes Reales)</h2>
+
+      <div class="figuras-grid">
+        <!-- Diosa 13 Serpiente -->
+        <div class="card3d">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagenes/diosa13serpiente.jpg" alt="Diosa 13 Serpiente" class="imagen" />
+              <h3>Diosa 13 Serpiente</h3>
+            </div>
+            <div class="card-back">
+              <p>Representa a una deidad femenina asociada con la fertilidad y el maíz. Su forma incluye detalles serpentinos y ornamentación ritual. Usada en ceremonias agrícolas importantes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cerámica Clásica -->
+        <div class="card3d">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagenes/ceramicazapoteca.jpg" alt="Cerámica Clásica Zapoteca" class="imagen" />
+              <h3>Cerámica Clásica</h3>
+            </div>
+            <div class="card-back">
+              <p>Obra refinada con formas geométricas, rostros y símbolos religiosos. Usada en rituales y como ofrenda funeraria. Muestra la maestría de los alfareros zapotecas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instrumentos Musicales -->
+        <div class="card3d">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagenes/instrumentos.jpg" alt="Instrumentos musicales zapotecas" class="imagen" />
+              <h3>Instrumentos Musicales</h3>
+            </div>
+            <div class="card-back">
+              <p>Incluyen ocarinas, silbatos y tambores de barro. Decorados con formas animales y usados en fiestas, ceremonias y rituales para invocar lluvia o celebrar cosechas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gran Jaguar -->
+        <div class="card3d">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagenes/granjaguar.jpg" alt="Gran Jaguar zapoteca" class="imagen" />
+              <h3>Gran Jaguar</h3>
+            </div>
+            <div class="card-back">
+              <p>Figura poderosa del jaguar como símbolo de autoridad y conexión espiritual. Relacionado con chamanes y gobernantes. Su expresión transmite fuerza y respeto sagrado.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estela 11 -->
+        <div class="card3d">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagenes/estela11.jpg" alt="Estela 11 zapoteca" class="imagen" />
+              <h3>Estela 11</h3>
+            </div>
+            <div class="card-back">
+              <p>Bloque de piedra tallado con glifos y figuras rituales. Narraba eventos históricos y sagrados. Probablemente conmemora a un gobernante o fecha importante.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Urna de Cocijo -->
+        <div class="card3d">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imagenes/urnacocijo.jpg" alt="Urna de Cocijo zapoteca" class="imagen" />
+              <h3>Urna de Cocijo</h3>
+            </div>
+            <div class="card-back">
+              <p>Figura del dios del rayo y la lluvia, una deidad central en su religión. Usada en tumbas como protección espiritual. Decorada con símbolos de agua y rayos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <section id="monte-alban" style="padding: 80px 20px; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: #fff; text-align: center;">
+  <h2 style="font-size: 3em; margin-bottom: 20px; font-weight: bold; animation: slideDown 1s ease-out;">Monte Albán</h2>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 1.2em; line-height: 1.8; animation: fadeInText 2s ease-out;">
+    Monte Albán fue la antigua capital de los zapotecas, fundada alrededor del año 500 a.C. en la cima de una montaña que domina el valle de Oaxaca. Esta ciudad prehispánica se convirtió en uno de los centros más poderosos de Mesoamérica. Su arquitectura monumental incluye plazas, terrazas, palacios, observatorios astronómicos y tumbas. Monte Albán destaca por sus estelas grabadas, conocidas como los "Danzantes", que representan figuras humanas en diversas posiciones y se cree que tienen un significado ritual. El sitio demuestra el alto nivel de organización política, religiosa y cultural de la civilización zapoteca. Hoy es Patrimonio de la Humanidad por la UNESCO y un testimonio vivo del esplendor de los antiguos zapotecas.
+  </p>
+
+  <!-- Tarjeta emergente con dato curioso -->
+  <div class="card-container">
+    <div class="info-card">
+      <h3>Dato Curioso</h3>
+      <p>Monte Albán fue uno de los primeros centros urbanos planificados de América. ¡Su trazo arquitectónico revela conocimiento astronómico avanzado!</p>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.card-container {
+  perspective: 1000px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.info-card {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #00e5ff;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  transform: rotateY(0deg);
+  transition: transform 0.8s, box-shadow 0.8s;
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3);
+  cursor: pointer;
+}
+
+.info-card:hover {
+  transform: rotateY(10deg) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 229, 255, 0.6);
+}
+
+.info-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #00e5ff;
+}
+
+.info-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+</style>
+
+  
+  
+</style>
+
+    <style>
+      .figuras-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .card3d {
+        perspective: 1000px;
+      }
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 360px;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+      }
+      .card3d:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+      .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        padding: 1rem;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        backface-visibility: hidden;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        color: #fff;
+      }
+      .card-front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .card-front img {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+      .card-back {
+        transform: rotateY(180deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      model-viewer {
+        margin-top: 2rem;
+      }
+    </style>
+
+    <!-- Modelo 3D Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<!-- Animaciones con AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true
+      });
+    </script>
+<script type="module">
+src="monte_alban/scene.gbl"
+  import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+  import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js';
+  import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js';
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.body.appendChild(renderer.domElement);
+
+  const controls = new OrbitControls(camera, renderer.domElement);
+
+  // Luz
+  const light = new THREE.DirectionalLight(0xffffff, 1);
+  light.position.set(5, 10, 7.5);
+  scene.add(light);
+
+  // Cargar modelo
+  const loader = new GLTFLoader();
+  loader.load('models/modelo.glb', function (gltf) {
+    scene.add(gltf.scene);
+    gltf.scene.scale.set(1, 1, 1);
+    gltf.scene.position.set(0, 0, 0);
+  }, undefined, function  {
+    console.error
+  });
+
+  camera.position.z = 5;
+
+  function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene, camera);
+  }
+
+  animate();
+</script>
+
+
+    <!-- Sección final de reflexión -->
+    <section id="reflexion" data-aos="fade-up">
+      <h2>Reflexión Final</h2>
+      <p>
+        La cultura zapoteca dejó un legado impresionante en la historia de Mesoamérica. Sus templos, escritura, cerámica y creencias siguen siendo objeto de estudio e inspiración. Esta página es un pequeño homenaje a su sabiduría y su poder creativo.
+      </p>
+      <p><strong>¡Gracias por explorar con nosotros esta fascinante civilización!</strong></p>
+    </section>
+
+<section id="curiosidades">
+  <h2>Curiosidades de la Cultura Zapoteca</h2>
+  <ul class="curiosidades-lista">
+    <li class="fade-in">🔍 Fueron una de las primeras civilizaciones en usar escritura jeroglífica en Mesoamérica.</li>
+    <li class="fade-in">🦴 Practicaban entierros ceremoniales con urnas decoradas y objetos de valor.</li>
+    <li class="fade-in">📡 Desarrollaron un sistema de numeración vigesimal, similar al de los mayas.</li>
+    <li class="fade-in">🌩️ El dios Cocijo guarda muchas similitudes con Tláloc y Chaac de otras culturas mesoamericanas.</li>
+    <li class="fade-in">📚 Su nombre significa “Gente del Zapote” en náhuatl, aunque ellos se autodenominaban “Be’ena’a”.</li>
+  </ul>
+</section>
+
+<section id="linea-tiempo">
+  <h2>Línea del Tiempo Zapoteca</h2>
+  <div class="timeline">
+    <div class="timeline-item slide-in">
+      <h3>1500 a.C.</h3>
+      <p>Primeros asentamientos agrícolas zapotecas en el Valle de Oaxaca.</p>
+    </div>
+    <div class="timeline-item slide-in">
+      <h3>500 a.C.</h3>
+      <p>Fundación de Monte Albán como capital zapoteca.</p>
+    </div>
+    <div class="timeline-item slide-in">
+      <h3>200 d.C.</h3>
+      <p>Apogeo cultural y militar de Monte Albán. Desarrollo de escritura jeroglífica.</p>
+    </div>
+    <div class="timeline-item slide-in">
+      <h3>750 d.C.</h3>
+      <p>Declive de Monte Albán. Auge de Mitla como centro religioso.</p>
+    </div>
+    <div class="timeline-item slide-in">
+      <h3>1400 d.C.</h3>
+      <p>Conflictos con los mixtecos y otras culturas mesoamericanas.</p>
+    </div>
+    <div class="timeline-item slide-in">
+      <h3>1521 d.C.</h3>
+      <p>Llegada de los españoles. Fin del dominio zapoteca independiente.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+#curiosidades, #linea-tiempo {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+.curiosidades-lista {
+  list-style: none;
+  padding-left: 0;
+}
+.curiosidades-lista li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.timeline-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 5px solid var(--acento);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000050;
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: var(--acento);
+  border-radius: 50%;
+  position: absolute;
+  left: -11px;
+  top: 20px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-in {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 1s ease;
+}
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+</style>
+
+<script>
+  const animables = document.querySelectorAll('.fade-in, .slide-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  animables.forEach(el => observer.observe(el));
+</script>
+
+
+    <!-- Efectos de sonido -->
+    <audio id="audio-hover" src="sonidos/click.mp3" preload="auto"></audio>
+    <script>
+      const sonido = document.getElementById("audio-hover");
+      document.querySelectorAll("button, .card3d").forEach(el => {
+        el.addEventListener("mouseenter", () => {
+          sonido.currentTime = 0;
+          sonido.play();
+        });
+      });
+    </script>
+
+    <!-- Footer -->
+    <footer data-aos="fade-in">
+      <div class="footer-content">
+        <h3>Proyecto Zapoteca</h3>
+        <p>Desarrollado por: López Ambriz Carlos Guillermo (Capitán)<br />
+        Integrantes: Otero Rivas Mateo Alejandro, García García Matteo Josué, Cruz Vera Verónica Camila</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Estilo Footer y Extras -->
+    <style>
+      footer {
+        background: linear-gradient(to right, #212121, #000000);
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+      }
+      .footer-content h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: #ffc107;
+      }
+      .social-icons a {
+        color: #fff;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+        transition: color 0.3s ease;
+      }
+      .social-icons a:hover {
+        color: #ff5722;
+      }
+      section#reflexion {
+        margin: 4rem auto;
+        text-align: center;
+        max-width: 800px;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+      }
+    </style>
+
+    <!-- Íconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Partículas decorativas -->
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 50 },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3 },
+          move: { enable: true, speed: 2 }
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "repulse" }
+          }
+        },
+        retina_detect: true
+      });
+    </script>
+
+    <style>
+      #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+      }
+    </style>
+<!-- Botón visible en la página -->
+<button id="activarSonido" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1e90ff, #007bff);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 1000;
+">
+  🎵 Activar Música
+</button>
+
+<!-- Audio oculto -->
+<audio id="musicaFondo" loop>
+  <source src="sonidos/fondo-ambiental.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const boton = document.getElementById('activarSonido');
+  const audio = document.getElementById('musicaFondo');
+
+  boton.addEventListener('mouseover', () => {
+    boton.style.transform = "scale(1.05)";
+    boton.style.boxShadow = "0 6px 14px rgba(0, 0, 0, 0.25)";
+  });
+
+  boton.addEventListener('mouseout', () => {
+    boton.style.transform = "scale(1)";
+    boton.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.2)";
+  });
+
+  boton.addEventListener('click', () => {
+    audio.volume = 0.5;
+    audio.play().then(() => {
+      boton.disabled = true;
+      boton.textContent = "✅ Música Activada";
+      boton.style.background = "#007bff";
+      boton.style.cursor = "default";
+    }).catch((e) => {
+    });
+  });
+</script>
+<style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+    #btnMostrar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      padding: 10px 20px;
+      background: #008CBA;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>}
+  <script type="module">
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+    import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js';
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xeeeeee);
+
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 1, 5);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.1;
+    controls.enableZoom = true;
+
+    // Luz ambiental y direccional
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(5, 10, 7.5);
+    scene.add(directionalLight);
+
+    // Ajustar al redimensionar
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+<div class="maya-box">
+  <a href="https://manusnigra.my.canva.site/los-mayas" target="_blank">Los Mayas</a>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+  .maya-box {
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0073e6, #00bfff);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 40px auto;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1s ease-in-out forwards;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .maya-box a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .maya-box:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #005bb5, #0099cc);
+  }
+
+  .maya-box:hover a {
+    transform: scale(1.1);
+  }
+
+  @keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+ <style>
+    .recuadro {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #fdf6e3;
+      border: 2px solid #a1887f;
+      border-radius: 10px;
+      padding: 16px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 16px;
+      animation: slideUp 0.8s ease-out;
+      z-index: 1000;
+      color: #4e342e;
+    }
+
+    .recuadro a {
+      color: #d84315;
+      font-weight: bold;
+      margin-left: 8px;
+      text-decoration: none;
+    }
+
+    .recuadro a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="recuadro">
+    Presentación Los mayas — 
+    <a href="https://manusnigra.my.canva.site/los-mayas" target="_blank">SIG</a>
+  </div>
+</style>
+  </body>
+</html>
