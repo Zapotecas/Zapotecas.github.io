@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <style>
-  /* Reset básico */
+   /* Reset básico */
   * {
     margin: 0; padding: 0; box-sizing: border-box;
   }
@@ -28,23 +27,25 @@
   section#portales-culturales {
     position: relative;
     z-index: 1;
-    padding: 100px 20px 60px;
+    padding: 100px 20px 150px; /* Más padding abajo para no interferir */
     background-color: rgba(15,15,46,0.9);
     border-radius: 20px;
     margin: 60px auto;
     max-width: 1200px;
     box-shadow: 0 0 60px rgba(0, 255, 255, 0.25);
     perspective: 1000px;
+    overflow: hidden; /* Contiene texto flotante */
   }
 
   /* Texto flotante animado del título */
-  section h2 {
+  section#portales-culturales h2 {
     text-align: center;
     font-size: 2.8rem;
     color: #00f0ff;
     text-shadow: 0 0 12px #00e6ff, 0 0 25px #00aaff;
     margin-bottom: 50px;
     position: relative;
+    z-index: 2;
     animation: floatText 4s ease-in-out infinite;
   }
   @keyframes floatText {
@@ -125,7 +126,6 @@
 
   /* Responsive */
 
-  /* Tablets y móviles en horizontal */
   @media (max-width: 900px) {
     .tarjeta-container {
       gap: 20px;
@@ -134,16 +134,15 @@
       width: 180px;
       padding: 16px;
     }
-    section h2 {
+    section#portales-culturales h2 {
       font-size: 2.4rem;
       margin-bottom: 40px;
     }
   }
 
-  /* Celulares vertical */
   @media (max-width: 480px) {
     section#portales-culturales {
-      padding: 80px 15px 40px;
+      padding: 80px 15px 120px;
       margin: 40px 10px;
     }
     .tarjeta-container {
@@ -155,7 +154,7 @@
       margin: 0 auto;
       padding: 18px 20px;
     }
-    section h2 {
+    section#portales-culturales h2 {
       font-size: 2rem;
       margin-bottom: 35px;
     }
@@ -182,6 +181,40 @@
     <div class="tarjeta"><h3>Mexicas</h3><a href="https://culturamexica.github.io/" target="_blank" rel="noopener">Visitar</a></div>
   </div>
 </section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  // Configuración partículas de fondo
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 80, density: { enable: true, value_area: 800 }},
+      color: { value: "#00f0ff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3 },
+      line_linked: { enable: true, distance: 150, color: "#00f0ff", opacity: 0.4, width: 1 },
+      move: { enable: true, speed: 2, direction: "none", out_mode: "out" }
+    },
+    interactivity: {
+      events: { onhover: { enable: true, mode: "grab" }},
+      modes: { grab: { distance: 140, line_linked: { opacity: 1 }}}
+    },
+    retina_detect: true
+  });
+
+  // Animación de entrada por scroll
+  const tarjetas = document.querySelectorAll('.tarjeta');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  tarjetas.forEach(t => observer.observe(t));
+</script>
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
