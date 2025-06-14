@@ -1,73 +1,80 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  // Configuración partículas de fondo
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 80, density: { enable: true, value_area: 800 }},
-      color: { value: "#00f0ff" },
-      shape: { type: "circle" },
-      opacity: { value: 0.5 },
-      size: { value: 3 },
-      line_linked: { enable: true, distance: 150, color: "#00f0ff", opacity: 0.4, width: 1 },
-      move: { enable: true, speed: 2, direction: "none", out_mode: "out" }
-    },
-    interactivity: {
-      events: { onhover: { enable: true, mode: "grab" }},
-      modes: { grab: { distance: 140, line_linked: { opacity: 1 }}}
-    },
-    retina_detect: true
-  });
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portales Culturales</title>
+    <style>
+        .tarjeta a {
+            display: inline-block;
+            padding: 12px 18px;
+            color: #fff;
+            background-color: #222;
+            text-decoration: none;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+        }
 
-  // Animación de entrada por scroll
-  const tarjetas = document.querySelectorAll('.tarjeta');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  tarjetas.forEach(t => observer.observe(t));
-</script>
+        .tarjeta a::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease-in-out;
+            transform: translate(-50%, -50%);
+        }
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  // Configuración partículas de fondo
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 80, density: { enable: true, value_area: 800 }},
-      color: { value: "#00f0ff" },
-      shape: { type: "circle" },
-      opacity: { value: 0.5 },
-      size: { value: 3 },
-      line_linked: { enable: true, distance: 150, color: "#00f0ff", opacity: 0.4, width: 1 },
-      move: { enable: true, speed: 2, direction: "none", out_mode: "out" }
-    },
-    interactivity: {
-      events: { onhover: { enable: true, mode: "grab" }},
-      modes: { grab: { distance: 140, line_linked: { opacity: 1 }}}
-    },
-    retina_detect: true
-  });
+        .tarjeta a:hover {
+            background-color: #444;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
 
-  // Animación de entrada por scroll
-  const tarjetas = document.querySelectorAll('.tarjeta');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  tarjetas.forEach(t => observer.observe(t));
-</script>
+        .tarjeta a:hover::before {
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="portales-culturales" style="position: relative; z-index: 1; padding: 80px 20px; background-color: rgba(15,15,46,0.85); border-radius: 20px; margin: 40px auto; max-width: 1200px;">
+        <h2 style="text-align: center; font-size: 36px; color: #fff; text-shadow: 2px 2px 8px #000;">🌌 Portales de las Culturas Originarias 🌌</h2>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+            <div class="tarjeta">
+                <h3>Oaxaca</h3>
+                <a href="http://culturaoaxaca1.github.io/" target="_blank">Visitar</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Mixteca</h3>
+                <a href="https://culturamixteca.github.io/" target="_blank">Visitar</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Totonacas</h3>
+                <a href="https://proyectototonacas.github.io/" target="_blank">Visitar</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Olmecas</h3>
+                <a href="https://culturaolmeca.github.io/" target="_blank">Visitar</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Tarascos</h3>
+                <a href="https://culturatarascos.github.io/" target="_blank">Visitar</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Mayas</h3>
+                <a href="https://manusnigra.my.canva.site/los-mayas" target="_blank">Visitar</a>
+            </div>
+            <div class="tarjeta">
+                <h3>Mexicas</h3>
+                <a href="https://culturamexica.github.io/" target="_blank">Visitar</a>
+            </div>
+        </div>
+    </section>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cultura Zapoteca</title>
@@ -377,8 +384,8 @@
 }
 </style>
 
-  
-  
+
+
 </style>
 
     <style>
